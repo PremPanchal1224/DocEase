@@ -22,7 +22,7 @@ Users can upload PDF and DOCX documents.
 - `DOCXReader.kt` uses **Apache POI**
 
 ### ✂️ Chunking and Text Preprocessing
-Extracted text is split into overlapping "chunks" using `WhiteSpaceSplitter.kt`.  
+- Extracted text is split into overlapping "chunks" using `WhiteSpaceSplitter.kt`.  
 - Ensures semantic continuity across segments  
 - Enhances retrieval accuracy during semantic search
 
