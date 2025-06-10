@@ -1,0 +1,14 @@
+# Android specific
+.gradle/
+.idea/
+local.properties
+*.iml
+/build/
+*.apk
+*.keystore
+
+# OS-specific
+.DS_Store
+
+# Kotlin annotation processor
+kapt/
