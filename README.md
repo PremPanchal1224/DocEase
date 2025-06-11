@@ -40,7 +40,12 @@ DocEase is an Android app that helps you understand documents faster using summa
 - Sentence-Transformers (MiniLM)
 - Gemini Android SDK
 
-🎥 [Click here to watch the demo](DocEase_WorkingDemo.mp4)
+## 🎥 Demo
+
+Click the link below to watch the working demo of the DocEase app:
+
+👉 [Watch DocEase Demo Video on Google Drive](https://drive.google.com/file/d/1LS3NCk5T1KPASJ1sq5tRaKLIYKjl4xX-/view?usp=sharing)
+
 
 
 
