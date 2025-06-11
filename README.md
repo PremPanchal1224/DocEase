@@ -57,18 +57,4 @@ Users can upload PDF and DOCX documents.
 - Enhanced UI/UX for document navigation
 - Integration with speech-to-text for voice-based queries
 
----
-## 📄 Project Report
 
-You can view the full project report here:  
-[📘 DocEase - Project Report (Google Drive)](https://drive.google.com/file/d/1GBmnvlwcmjTqLNjEHtGpoSX3pYVqz_Hz/view?usp=sharing)
-
-
-## 🤝 Contributions
-
-Pull requests and suggestions are welcome!  
-Feel free to open issues for bugs or feature requests.
-
----
-
-> ⚠️ Note: This app requires internet access for query processing and answer generation using the hosted LLM.
