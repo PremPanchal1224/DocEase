@@ -1,60 +1,43 @@
-# 📄 DocEase – Your Intelligent Document Assistant
+# 📄 DocEase – Intelligent Document Assistant
 
-DocEase is an Android application that simplifies working with documents by providing intelligent summaries and answering questions based on document content. It leverages a Retrieval-Augmented Generation (RAG) pipeline, combining local processing with a powerful hosted Large Language Model (LLM) for accurate, context-aware responses.
-
----
-
-## 🚀 Features
-
-- 📂 **Upload PDF/DOCX** – Seamlessly import documents in PDF and DOCX formats.
-- 🧠 **Natural Language Q&A** – Ask questions in plain language and receive accurate answers based on the document content.
-- 📝 **Automatic Summarization** – Generate concise summaries of long documents.
-- 🔍 **Context-Aware Answers** – View the source text from which the answer was derived.
-- 💬 **Fast and Interactive** – Uses semantic search and LLM integration for fast and coherent responses.
+DocEase is an Android app that helps you understand documents faster using summaries and Q&A powered by AI.
 
 ---
 
-## 🔄 System Workflow
+## 🚀 Key Features
 
-### 📥 Importing Documents
-Users can upload PDF and DOCX documents.  
-- `PDFReader.kt` uses **iTextPDF**
-- `DOCXReader.kt` uses **Apache POI**
+- 📂 Import PDF & DOCX files
+- 🧠 Ask questions in natural language
+- 📝 Get instant summaries
+- 🔍 See source text for each answer
+- ⚡ Fast, interactive responses
 
-### ✂️ Chunking and Text Preprocessing
-- Extracted text is split into overlapping "chunks" using `WhiteSpaceSplitter.kt`.  
-- Ensures semantic continuity across segments  
-- Enhances retrieval accuracy during semantic search
+---
 
-### 📊 Embedding and Vector Storage
-- Each chunk is embedded using the **all-MiniLM-L6-V2** model via `SentenceEmbeddingProvider.kt`, and stored in **ObjectBox**, a fast on-device NoSQL vector DB.  
-- Embeddings indexed with `chunkId` for efficient search
+## ⚙️ How It Works
 
-### 🔎 Semantic Search and Query Handling
-- User queries are embedded and compared against stored chunks using cosine similarity.  
-- Retrieves top-K relevant chunks based on semantic similarity
+1. **Document Import**  
+   - Uses iTextPDF (PDF) & Apache POI (DOCX)
 
-### 🤖 LLM-based Answer Generation
-- Retrieved chunks and the query are integrated into a dynamic prompt template.  
-- Sent to **Gemini-1.5-Flash** via the **Gemini Android SDK**  
-- Returns a fluent and contextually accurate answer
+2. **Text Chunking**  
+   - Breaks text into overlapping parts for better context
+
+3. **Embeddings + Storage**  
+   - Uses `all-MiniLM-L6-V2` to embed chunks  
+   - Stores them in ObjectBox (on-device vector DB)
+
+4. **Semantic Search + Answering**  
+   - Finds relevant chunks with cosine similarity  
+   - Sends them + your question to Gemini 1.5 Flash for a smart answer
 
 ---
 
 ## 🧰 Tech Stack
 
-- Android (Kotlin)
-- iTextPDF, Apache POI – Document parsing
-- ObjectBox – Local vector storage
-- all-MiniLM-L6-V2 – Embedding model
-- Gemini Android SDK – Hosted LLM for answer generation
-
----
-
-## 📌 Future Enhancements
-
-- Support for additional file types
-- Enhanced UI/UX for document navigation
-- Integration with speech-to-text for voice-based queries
+- Kotlin (Android)
+- iTextPDF, Apache POI
+- ObjectBox
+- Sentence-Transformers (MiniLM)
+- Gemini Android SDK
 
 
