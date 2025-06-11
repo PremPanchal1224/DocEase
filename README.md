@@ -39,5 +39,11 @@ DocEase is an Android app that helps you understand documents faster using summa
 - ObjectBox
 - Sentence-Transformers (MiniLM)
 - Gemini Android SDK
+- 
+## 🎥 Demo Video
+
+<video src="media/DocEase_WorkingDemo.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
 
 
