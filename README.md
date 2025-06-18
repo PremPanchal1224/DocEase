@@ -46,7 +46,11 @@ Click the link below to watch the working demo of the DocEase app:
 
 👉 [Watch DocEase Demo Video on Google Drive](https://drive.google.com/file/d/1LS3NCk5T1KPASJ1sq5tRaKLIYKjl4xX-/view?usp=sharing)
 
+## 📲 Try DocEase App
 
+🚀 **Download the Android APK and try it out:**
+
+👉 [Download DocEase APK](https://github.com/PremPanchal1224/Doc-Ease/releases/download/v1.0/app-release.apk) 
 
 
 
